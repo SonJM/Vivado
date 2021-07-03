@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 27 11:41:05 2021
+# Process ID: 16268
+# Current directory: C:/Users/wingk/Desktop/Vivado/project_10/project_10.runs/synth_1
+# Command line: vivado.exe -log seg7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seg7.tcl
+# Log file: C:/Users/wingk/Desktop/Vivado/project_10/project_10.runs/synth_1/seg7.vds
+# Journal file: C:/Users/wingk/Desktop/Vivado/project_10/project_10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seg7.tcl -notrace

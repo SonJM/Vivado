@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1622687540">
+  <File Type="BITSTR-BMM" Name="clcd_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="clcd_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="clcd_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="clcd_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="clcd.tcl"/>
+  <File Type="OPT-TIMING" Name="clcd_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="clcd_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="clcd_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="clcd_reports.tcl"/>
+  <File Type="OPT-DRC" Name="clcd_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="clcd.hwdef"/>
+  <File Type="PWROPT-DCP" Name="clcd_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="clcd_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="clcd_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="clcd_placed.dcp"/>
+  <File Type="PLACE-IO" Name="clcd_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="clcd_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="clcd_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="clcd_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="clcd_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="clcd_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="clcd_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="clcd_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="clcd_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="clcd.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="clcd_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="clcd_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="clcd_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="clcd.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="clcd_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="clcd_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="clcd_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="clcd_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="clcd_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="clcd_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="clcd_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="clcd.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="clcd_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clcd_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clcd_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="clcd_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="clcd_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="clcd_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="clcd_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="clcd_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="clcd_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="clcd_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="clcd_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="clcd_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="clcd_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="clcd_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="clcd_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="clcd_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="clcd_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="clcd_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="clcd_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="clcd_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="clcd_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="clcd.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="clcd_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="clcd.rbt"/>
+  <File Type="BITSTR-NKY" Name="clcd.nky"/>
+  <File Type="PDI-FILE" Name="clcd.pdi"/>
+  <File Type="RCFI_FILE" Name="clcd.rcfi"/>
+  <File Type="CFI_FILE" Name="clcd.cfi"/>
+  <File Type="RNPI_FILE" Name="clcd.rnpi"/>
+  <File Type="NPI_FILE" Name="clcd.npi"/>
+  <File Type="RBD_FILE" Name="clcd.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="clcd.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="clcd.sysdef"/>
+  <File Type="BG-BGN" Name="clcd.bgn"/>
+  <File Type="BG-DRC" Name="clcd.drc"/>
+  <File Type="RDI-RDI" Name="clcd.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clcd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="clcd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/clcd.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/clcd.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

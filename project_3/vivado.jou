@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 10:05:42 2021
+# Process ID: 12944
+# Current directory: C:/Users/wingk/Desktop/Vivado/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3432 C:\Users\wingk\Desktop\Vivado\project_3\project_3.xpr
+# Log file: C:/Users/wingk/Desktop/Vivado/project_3/vivado.log
+# Journal file: C:/Users/wingk/Desktop/Vivado/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wingk/Desktop/Vivado/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+launch_simulation
+source ha_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+file mkdir C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1
+file mkdir C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new
+close [ open C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc w ]
+add_files -fileset constrs_1 C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc
+current_design rtl_1
+place_ports a N20
+set_property IOSTANDARD LVCMOS33 [get_ports [list a]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list b]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list c]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list s]]
+place_ports b M22
+place_ports c Y18
+place_ports s AA18
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+current_design impl_1
+place_ports a N20
+set_property IOSTANDARD LVCMOS33 [get_ports [list a]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list b]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list c]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list s]]
+place_ports b M22
+place_ports c Y18
+place_ports s AA18
+refresh_design
+current_design rtl_1
+close [ open C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc w ]
+add_files -fileset constrs_1 C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc
+set_property target_constrs_file C:/Users/wingk/Desktop/Vivado/project_3/project_3.srcs/constrs_1/new/ha.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+current_design impl_1
+current_design rtl_1
+place_ports c V22
+place_ports s U21
+startgroup
+set_property package_pin "" [get_ports [list  b]]
+place_ports a M22
+endgroup
+place_ports b N20
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+current_design impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+current_design rtl_1
+current_design synth_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_3/project_3.runs/impl_1/ha.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_3/project_3.runs/impl_1/ha.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_3/project_3.runs/impl_1/ha.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_3/project_3.runs/impl_1/ha.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+current_design impl_1
+current_design rtl_1
+place_ports c Y22
+place_ports s AB22
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+current_design impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_3/project_3.runs/impl_1/ha.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+close_sim

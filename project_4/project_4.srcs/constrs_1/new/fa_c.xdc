@@ -1,0 +1,11 @@
+set_property IOSTANDARD LVCMOS33 [get_ports a]
+set_property IOSTANDARD LVCMOS33 [get_ports b]
+set_property IOSTANDARD LVCMOS33 [get_ports cin]
+set_property IOSTANDARD LVCMOS33 [get_ports cout]
+set_property IOSTANDARD LVCMOS33 [get_ports s]
+set_property PACKAGE_PIN T21 [get_ports a]
+set_property PACKAGE_PIN U21 [get_ports b]
+set_property PACKAGE_PIN V22 [get_ports cin]
+set_property PACKAGE_PIN Y22 [get_ports cout]
+set_property PACKAGE_PIN AB22 [get_ports s]
+

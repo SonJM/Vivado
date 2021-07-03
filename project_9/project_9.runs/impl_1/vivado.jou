@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 20 11:45:07 2021
+# Process ID: 19048
+# Current directory: C:/Users/wingk/Desktop/Vivado/project_9/project_9.runs/impl_1
+# Command line: vivado.exe -log shift4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source shift4.tcl -notrace
+# Log file: C:/Users/wingk/Desktop/Vivado/project_9/project_9.runs/impl_1/shift4.vdi
+# Journal file: C:/Users/wingk/Desktop/Vivado/project_9/project_9.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source shift4.tcl -notrace

@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 13 10:09:16 2021
+# Process ID: 26428
+# Current directory: C:/Users/wingk/Desktop/Vivado/project_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4608 C:\Users\wingk\Desktop\Vivado\project_6\project_6.xpr
+# Log file: C:/Users/wingk/Desktop/Vivado/project_6/vivado.log
+# Journal file: C:/Users/wingk/Desktop/Vivado/project_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wingk/Desktop/Vivado/project_6/project_6.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/wingk/Desktop/Vivado/project_6/project_6.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1004.809 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1004.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AC4CB0
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2341.621 ; gain = 1336.812
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_6/project_6.runs/impl_1/mux4x1.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_6/project_6.runs/impl_1/mux4x1.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a75tfgg484-1
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2689.617 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_6/project_6.srcs/constrs_1/new/mux4x1.xdc]
+Finished Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_6/project_6.srcs/constrs_1/new/mux4x1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2772.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 2908.684 ; gain = 540.164
+close_project
+create_project project_7 C:/Users/wingk/Desktop/Vivado/project_7 -part xc7a75tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3422.445 ; gain = 0.000
+file mkdir C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new
+close [ open C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v w ]
+add_files C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 3
+[Thu May 13 10:39:58 2021] Launched synth_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a75tfgg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3426.742 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3434.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+file mkdir C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sim_1/new/dff_tb.v w ]
+add_files -fileset sim_1 C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sim_1/new/dff_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dff_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dff_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sim_1/new/dff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim'
+"xelab -wto 5ada896cbe0548719f49c4564686fd64 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dff_tb_behav xil_defaultlib.dff_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5ada896cbe0548719f49c4564686fd64 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dff_tb_behav xil_defaultlib.dff_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dff
+Compiling module xil_defaultlib.dff_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dff_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim/xsim.dir/dff_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim/xsim.dir/dff_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May 13 10:45:03 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu May 13 10:45:03 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3480.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wingk/Desktop/Vivado/project_7/project_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dff_tb_behav -key {Behavioral:sim_1:Functional:dff_tb} -tclbatch {dff_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source dff_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dff_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 3525.938 ; gain = 45.418
+launch_runs impl_1 -jobs 3
+[Thu May 13 10:46:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3527.168 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3527.508 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3527.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3527.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3527.508 ; gain = 0.340
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clr_b]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list d]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list pr_b]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list q]]
+place_ports clk J4
+place_ports clr_b L3
+place_ports d K3
+place_ports pr_b M2
+place_ports q Y18
+file mkdir C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new
+close [ open C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc w ]
+add_files -fileset constrs_1 C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc
+set_property target_constrs_file C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc [current_fileset -constrset]
+save_constraints -force
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a75tfgg484-1
+Top: dff
+WARNING: [Synth 8-2611] redeclaration of ansi port q is not allowed [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3870.316 ; gain = 227.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (1#1) [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3915.453 ; gain = 272.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3936.285 ; gain = 293.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3936.285 ; gain = 293.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3936.285 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc]
+Finished Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3967.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3977.215 ; gain = 334.438
+4 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3977.227 ; gain = 334.449
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Thu May 13 11:06:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1/runme.log
+[Thu May 13 11:06:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+current_design impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Thu May 13 11:09:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Thu May 13 11:12:48 2021] Launched synth_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1/runme.log
+[Thu May 13 11:12:48 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 4000.527 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AC4CB0
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/dff.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/dff.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design rtl_1
+refresh_design
+WARNING: [Synth 8-2611] redeclaration of ansi port q is not allowed [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4056.727 ; gain = 40.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (1#1) [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/sources_1/new/dff.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4089.395 ; gain = 73.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 4113.285 ; gain = 97.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 4113.285 ; gain = 97.148
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4121.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pr_b_IBUF'. [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/wingk/Desktop/Vivado/project_7/project_7.srcs/constrs_1/new/dff.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 4121.781 ; gain = 105.645
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Thu May 13 11:39:33 2021] Launched synth_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1/runme.log
+[Thu May 13 11:39:33 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1
+
+launch_runs synth_1 -jobs 3
+[Thu May 13 11:39:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 3
+[Thu May 13 11:41:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/wingk/Desktop/Vivado/project_7/project_7.runs/impl_1/runme.log
+current_design impl_1
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 4124.480 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 13 12:18:52 2021...
